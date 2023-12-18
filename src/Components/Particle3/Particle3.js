@@ -14,6 +14,7 @@ const Particle3 = () => {
   const moveThreshold = 10; // Set the movement threshold to release particles
   const prevMaskPosRef = useRef({ x: 0, y: 0 });
   const [showAlert, setShowAlert] = useState(false);
+  const [hasBoxShadow, setHasBoxShadow] = useState(false);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -24,13 +25,13 @@ const Particle3 = () => {
 
     const createParticles = () => {
       if (particlesRef.current.length === 0) {
-        for (let i = 0; i < 500; i++) {
+        for (let i = 0; i < 700; i++) {
           particlesRef.current.push({
             x: Math.random() * canvas.width,
             y: Math.random() * canvas.height,
             size: Math.random() * 4 + 1,
-            speedX: Math.random() * 3 - 1,
-            speedY: Math.random() * 3 - 1,
+            speedX: Math.random() * 5 - 1,
+            speedY: Math.random() * 5 - 1,
             opacity: Math.random(),
           });
         }
@@ -39,9 +40,9 @@ const Particle3 = () => {
 
     const drawParticles = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
-      ctx.fillStyle = "#000000";
+      ctx.fillStyle = "white";
       ctx.fillRect(0, 0, canvas.width, canvas.height);
-      ctx.fillStyle = "#ffffff";
+      ctx.fillStyle = "#808080";
 
       particlesRef.current.forEach((particle) => {
         ctx.globalAlpha = particle.opacity;
@@ -119,19 +120,22 @@ const Particle3 = () => {
     <main className="heading-main">
       <canvas ref={canvasRef} className="particle-canvas" />
       <motion.div
-        className="mask"
+        className={`mask ${hasBoxShadow ? "box-shadow" : ""}`}
         style={{
           WebkitMaskPosition: `${x - size / 2}px ${y - size / 2}px`,
           WebkitMaskSize: `${size}px`,
+          
         }}
         onMouseEnter={() => {
           setIsHovered(true);
+          setHasBoxShadow(true);
         }}
         onMouseLeave={() => {
           setIsHovered(false);
+          setHasBoxShadow(false);
         }}
       >
-        <div className="mask-heading">HAPPY CLEAN ROOMS</div>
+        <div className="mask-heading" style={{height:`${size}px`,width:`${size}px`}}>HAPPY CLEAN ROOMS</div>
       </motion.div>
       {showAlert && (
         <div className={`alert ${showAlert ? "alert-shake" : ""}`}>

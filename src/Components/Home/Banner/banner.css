@@ -1,0 +1,24 @@
+.Banner{
+    margin-top: 120px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  border-radius: 30px;
+  height: 90%;
+  overflow: hidden;
+}
+#home-banner{
+    height: 100%;
+}
+.carousel-banner-home-img{
+    height: 100%;
+    width: 100%;
+}
+.carousel-banner-item{
+    cursor: pointer;
+}
+
+@media screen and (max-width:500px) {
+    .Banner{
+        border-radius: 15px;
+    }
+}

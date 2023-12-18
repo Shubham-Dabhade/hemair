@@ -1,0 +1,62 @@
+.Clients {
+  height: 100%;
+  width: 100%;
+  margin: 30px 0px;
+  padding: 20px 80px;
+}
+.inside-clients-container {
+  height: 100%;
+  width: 100%;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.swiper-container {
+  width: 100%;
+  height: 300px; /* Set a height for the container */
+  overflow: hidden;
+}
+
+.logos-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.client-logo-img {
+  width: 120px;
+  margin: 0px 40px;
+}
+
+.clients-container-heading {
+    text-align: left;
+    color: #ec652c;
+    font-size: clamp(1.5rem, 0.5774rem + 1.7536vw, 3.326rem);
+    font-weight: 600;
+    margin-bottom: 60px;
+}
+
+@media screen and (min-width: 1500px) {
+  .Clients {
+    width: 1440px;
+    padding: 20px 0px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Clients {
+    padding: 20px 50px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .Clients {
+    padding: 20px 20px;
+  }
+}

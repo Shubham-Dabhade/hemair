@@ -1,0 +1,232 @@
+.Nav {
+  margin-top: 120px;
+  height: 100%;
+  width: 100%;
+  padding: 0px 100px;
+}
+.inside-nav-container{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+}
+.nav-indicator{
+    background: #ec652c;
+    content: " ";
+    height: 100%;
+    width: calc(100%/3);
+    position: absolute;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    z-index: -2;
+    transition: all 0.5s ease;
+}
+.nav-indicator::before{
+    position: absolute;
+    background:transparent;
+    height: 50px;
+    width: 50px;
+    z-index: 0;
+    bottom: -2px;
+    border-radius: 30px;
+    box-shadow: 34px 30px 0 0 #ec652c;
+    left: -49px; 
+    content: '';
+}
+.nav-indi-1::before{
+    position: absolute;
+    background:transparent;
+    height: 50px;
+    width: 50px;
+    z-index: 0;
+    bottom: -8px;
+    border-radius: 30px;
+    box-shadow: 34px 30px 0 0 #ec652c;
+    left: -49px; 
+    content: '';
+}
+.nav-indicator::after{
+    position: absolute;
+    background:transparent;
+    height: 50px;
+    width: 50px;
+    z-index: 0;
+    bottom: -2px;
+    border-radius: 30px;
+    box-shadow: -34px 30px 0 0 #ec652c;
+    right: -49px; 
+    content: '';
+}
+.nav-indi-3::after{
+    position: absolute;
+    background:transparent;
+    height: 50px;
+    width: 50px;
+    z-index: 0;
+    bottom: -8px;
+    border-radius: 30px;
+    box-shadow: -34px 30px 0 0 #ec652c;
+    right: -49px; 
+    content: '';
+}
+
+.nav-link-1{
+    flex: 1;
+    padding: 20px;
+    /* text-align: left;
+    color: #ec652c;
+    font-size: clamp(1.5rem, 0.5774rem + 1.7536vw, 3.326rem);
+    font-weight: 600;
+    margin-bottom: 60px; */
+}
+.inside-nav-link-1{
+    width: 100%;
+    height: 100%;
+}
+.nav-link-anchor{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: black;
+    font-size: clamp(1.2rem, 0.5774rem + 0.7536vw, 3.326rem);
+    font-weight: 500;
+    transition: all 0.5s ease;
+}
+
+.nav-link-2{
+    flex: 1;
+    padding: 20px;
+}
+.nav-link-3{
+    flex: 1;
+    padding: 20px;
+}
+
+.nav-link-logo{
+    margin-right: 10px;
+}
+.nav-link-text{
+    /* margin: 0px 10px; */
+}
+
+@media screen and (min-width:1500px) {
+    .Nav{
+        padding: 0px 20px;
+        width: 1440px;
+    }
+}
+
+@media screen and (max-width:1070px) {
+    .nav-link-1{
+        padding: 20px;
+    }
+    .nav-link-text{
+        text-align: center;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .nav-link-text{
+        display: none;
+    }
+    .active-text{
+        display: block;
+        font-size: 16px;
+    }
+    .active-nav{
+        flex: 4;
+    }
+    .nav-indicator{
+        background: #ec652c;
+        content: " ";
+        height: 100%;
+        width: calc(100%/6 * 3.5);
+        position: absolute;
+        border-top-right-radius: 25px;
+        border-top-left-radius: 25px;
+        z-index: -2;
+        transition: all 0.5s ease;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .Nav{
+        padding: 0px 70px;
+    }
+    .active-text{
+        display: block;
+        font-size: 14px;
+    }
+    .nav-link-logo{
+        margin-right: 5px;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .active-nav{
+        flex: 10;
+    }
+    .nav-indicator{
+        background: #ec652c;
+        content: " ";
+        height: 100%;
+        width: calc(100%/6 * 3.8);
+        position: absolute;
+        border-top-right-radius: 25px;
+        border-top-left-radius: 25px;
+        z-index: -2;
+        transition: all 0.5s ease;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .nav-indicator{
+        width: calc(100%/6 * 3.5);
+    }
+    .inside-banner-industry{
+        padding: 5px !important;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .Nav{
+        padding: 0px 40px;
+    }
+}
+
+@media screen and (max-width:380px) {
+    .nav-link-1{
+        padding: 10px;
+    }
+    .nav-link-2{
+        padding: 10px;
+    }
+    .nav-link-3{
+        padding: 10px;
+    }
+    .nav-indicator{
+        width: calc(100%/6 * 3.8);
+    }
+}
+
+
+@media screen and (max-width:350px) {
+    .nav-indicator{
+        width: calc(100%/6 * 3.6);
+    }
+}
+
+@media screen and (max-width:335px) {
+    .nav-indicator{
+        width: calc(100%/6 * 3.55);
+    }
+}
+
+@media screen and (max-width:321px) {
+    .nav-indicator{
+        width: calc(100%/6 * 3.63);
+    }
+}

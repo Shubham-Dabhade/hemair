@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6e3157b4.css",
+    "main.js": "/static/js/main.56dfdec8.js",
+    "static/media/website-banner-pharma.jpg": "/static/media/website-banner-pharma.e9d706168c5b2f4b2edc.jpg",
+    "static/media/website-banner-electronics.jpg": "/static/media/website-banner-electronics.3408d31758966f95d6e1.jpg",
+    "static/media/website-banner-biotech.jpg": "/static/media/website-banner-biotech.29cb1bf1cd670d3d7cbe.jpg",
+    "static/media/hemair logo@2x-100.jpg": "/static/media/hemair logo@2x-100.4eb9ef793675cb6aff98.jpg",
+    "static/media/air_handling_unit.png": "/static/media/air_handling_unit.5ec45cd0efd22f8b5336.png",
+    "static/media/fan_filter.png": "/static/media/fan_filter.66b212b4630f1d16c064.png",
+    "static/media/voice_control_dampner.png": "/static/media/voice_control_dampner.bcf67289be8b218dd440.png",
+    "static/media/terminal_boxes.png": "/static/media/terminal_boxes.0e23d39eb7c791999c27.png",
+    "static/media/worker.avif": "/static/media/worker.946cbaa59b42a6ff68ab.avif",
+    "static/media/blob-haikei.png": "/static/media/blob-haikei.56a7c0b94cab412e6433.png",
+    "index.html": "/index.html",
+    "static/media/mask.svg": "/static/media/mask.e9dd8d999caa90c178bc.svg",
+    "main.6e3157b4.css.map": "/static/css/main.6e3157b4.css.map",
+    "main.56dfdec8.js.map": "/static/js/main.56dfdec8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6e3157b4.css",
+    "static/js/main.56dfdec8.js"
+  ]
+}
